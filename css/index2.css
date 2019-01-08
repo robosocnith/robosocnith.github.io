@@ -1,0 +1,418 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+}
+p{
+    font-size: 16px;
+}
+a{
+    text-decoration:none;
+    color: white;
+}
+a:focus{
+    color: red;
+}
+h2{
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+hr{
+    height: 4px;
+    width: 40px;
+    background-color: goldenrod;
+    text-align: center;
+}
+button{
+    background-color: rgba(15, 15, 63, 0.87);
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    color: white;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 90%;
+    padding: 0 5%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    border-bottom: 2px solid white;
+}
+.branding{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+figure{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 75%;
+    display: flex;
+    align-items: center;
+}
+.brand{
+    width: auto;
+    height: 100%;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+.brand h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+.brand span{
+    font-size: 30px;
+    font-weight: 700;
+}
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav-links a{
+    margin-left: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+.bg-image{
+    background-image: url("../img/cover-himalaya.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    -webkit-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+    clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-text{
+    width: 60%;
+    padding: 4vh 0;
+    height: auto;
+    border: 5px solid white;
+    margin: 0 20%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+}
+h1{
+    font-size: 80px;
+    font-weight: 1000;
+    margin: 0;
+}
+h3{
+    color: white;
+    text-align: center;
+}
+.about-us{
+    width: 60%;
+    height: 50vh;
+    margin: 50px 20% 0 20%;
+    text-align: justify;
+}
+.about-us div{
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about-us p{
+    margin-right: 20px;
+}
+.about-us h2{
+    color: goldenrod;
+}
+button:active{
+    box-shadow: 2px 2px 2px #aaaaaa;
+}
+
+.vis-motto{
+    width: 60%;
+    height: 80vh;
+    padding: 10vh 20%;
+    background-image: url("../img/landscape-3779159_1920.jpg");
+    background-position: center;
+    background-size: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 66%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 66%);
+    color: white;
+}
+.vis-grid{
+    padding: 5%;
+    display: grid;
+    grid-template-areas: 
+    "header header vis1"
+    "vis2 vis3 vis4";
+    justify-items: center;
+    align-items: center;
+    grid-gap: 20px;
+}
+.vis-grid > div{
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.head{
+    grid-area: header;
+    text-decoration: underline;
+}
+.head h2{
+    color: black;
+}
+.vis1{
+    grid-area: vis1;
+}
+.vis2{
+    grid-area: vis2;
+}
+.vis3{
+    grid-area: vis3;
+}
+.vis4{
+    grid-area: vis4;
+}
+.fac{
+    position: absolute;
+    top: 216vh;
+    width: 80%;
+    height: 100vh;
+    padding: 0 10%;
+    background-image: url("../img/landscape-540115_1920.jpg");
+    background-position: center; 
+    background-size: cover;
+    -webkit-clip-path: polygon(0 0, 100% 33%, 100% 66%, 0% 100%);
+    clip-path: polygon(0 0, 100% 33%, 100% 66%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fac-co{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "fac-pic fac-mssg fac-mssg";
+    grid-gap: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+.fac-co h2{
+    grid-area: header;
+    color: white;
+    text-decoration: underline;
+}
+.fac-co figure{
+    grid-area: fac-pic;
+}
+.fac-mssg{
+    grid-area: fac-mssg;
+}
+.robocon{
+    position: absolute;
+    top: 282vh;
+    width: 60%;
+    padding: 0 20%;
+    height: 100vh;
+    -webkit-clip-path: polygon(0 33%, 100% 0, 100% 100%, 0 66%);
+    clip-path: polygon(0 33%, 100% 0, 100% 100%, 0 66%);   
+    background-image: url("../img/rail-3678287_1920.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.robocon p{
+    text-align: center;
+    color: white;
+}
+.robocon h2{
+    color: white;
+    text-decoration: underline;
+}
+.rank-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.rank{
+    margin-top: 25px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.rank div{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    font-size: 30px;
+    color: white;
+    border: 4px solid goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.robo-but{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.guide{
+    width: 60%;
+    height: 100vh;
+    padding: 0 20%;
+    position: absolute;
+    top: 348vh;
+    background-image: url("../img/fac-cover.jpg");
+    background-size: cover;
+    background-position: center;
+    -webkit-clip-path: polygon(100% 33%, 100% 66%, 50% 100%, 0 66%, 0 0);
+    clip-path: polygon(100% 33%, 100% 66%, 50% 100%, 0 66%, 0 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.guide-left{
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   background-color: grey;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.guide-center{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.guide-right{
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   background-color: grey;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.guide-arrow{
+    margin: 0 50px;
+    filter: invert(100%);
+}
+.news{
+    position: absolute;
+    top: 448vh;
+    width: 60%;
+    height: 60vh;
+    padding: 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news-div{
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "head head head"
+    "news1 news2 news3";
+    grid-gap: 20px;
+}
+.news-div h2{
+    grid-area: head;
+    color: goldenrod;
+}
+.news1{
+    grid-area: news1;
+}
+.news2{
+    grid-area: news2;
+}
+.news3{
+    grid-area: news3;
+}
+.news-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news-content img{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    border-radius: 8px;
+}
+.cap{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 30px 30px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+footer{
+    position: absolute;
+    top: 504vh;
+    background-color: rgb(0,0,0);
+    height: 150px;
+    width: 60%;
+    padding: 0 20%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 25px;
+}
+.news-arrow{
+    margin: 0 50px;
+}
