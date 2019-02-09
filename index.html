@@ -5,162 +5,142 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/includes/nav.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/index2.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/includes/footer.css">
+    <script src="js/activities/jquery.min.js"></script>
+    <script src="js/includes/nav.js"></script>
 </head>
 <body>
     
-        <nav>
-            <div class="branding">
-                <figure>
-                    <img class="logo" src="img/robosoc.png">
-                </figure>
-                <div class="brand">   
-                <h3><span>ROBOTICS SOCIETY</span><br/>NIT-Hamirpur</h3>
-                </div>
-            </div>
-            <div class="nav-links">
-                <a href="index2.html">Home</a>
-                <a href="activities.html">Activities</a>
-                <a href="projects.html">Projects</a>
-                <a>Sponsor Us</a>
-                <a>Blog</a>
-                <a href="members.html">Members</a>
-                <a>Gallery</a>
-            </div>
-        </nav>
+    <div class="brand">
+            <img id="logo" src="img/robosoc.png">
+        </div>
+    <div id="nav-links" class="nav-open">
+        <a href="index2.html">Home</a>
+        <a href="activities.html">Activities</a>
+        <a href= "projects.html">Projects</a>
+        <a href="robocon.html">Robocon</a>
+        <a href="blog.html">Blog</a>
+        <a href="members.html">Members</a>
+    </div>
+    <nav>
+        <div class="brand-name">
+            <h3>ROBOTICS SOCIETY</h3>
+        </div>
+        <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
     <div class="bg-image">
     <div class="main-text">
         <h1>ROBOTICS SOCIETY</h1>
-        <a href="http://nith.ac.in" onclick="_blanc"><h3>NATIONAL INSTITUTE OF TECHNOLOGY | HAMIRPUR</h3></a>
+        <a href="http://nith.ac.in"><h3>NATIONAL INSTITUTE OF TECHNOLOGY | HAMIRPUR</h3></a>
     </div>
     </div>
-    <div class="about-us">
+
+    <section id="about-us">
         <h2>ABOUT US</h2>
         <hr>
-        <div>
+        <div class="about-us-info">
             <p>Robotics Society is a platform where students from various branches work together to nurture their technical understanding and culture their innovative ideas and dreams about robotics into reality.We would like to take all steps to excite and accelerate the interest of robotics among the students.</p>
             <p>We facilitate indispensable guidance through workshops and tutorials. It helps students to take up challenges from day to day life scenarios, orient the challenges to feasible solution form, stimulate the thought process of students and let them convert their ideas to prototypes by their technical skills, and creativity</p>
         </div>
-    </div>
+    </section>
 
-    <article class="vis-motto">
-        <div class="vis-grid">
-            <div class="head">
-                <h2>Vision and Motto</h2>
-            </div>
-            <div class="vis1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            </div>
-            <div class="vis2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            </div>
-            <div class="vis3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            </div>
-            <div class="vis4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            </div>
+    <section id="vis-motto">
+        <div class="vis-motto-head">
+            <h2>VISION & MOTTO</h2>
+            <hr>
         </div>
-    </article>
-
-    <article class="fac">
-        <div class="fac-co">
-            <h2>A Message from Faculty Cordinator</h2>
+        <div class="vis-motto-info">
+            <ul class="vis-motto-ul">
+                <li class="vis-motto-li"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></li>
+                <li class="vis-motto-li"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></li>
+                <li class="vis-motto-li"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></li>
+                <li class="vis-motto-li"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></li>
+            </ul>
+        </div>
+    </section>
+    <section id="fac-co">
+        <div>
+            <h2>A MESSAGE FROM FACULTY CORDINATOR</h2>
+            <hr>
+        </div>
+        <div class="fac-co-flex">
             <figure>
-                <img src="img/abstract-user-flat-1.svg" width=150px>
-                <figcaption>Dr. Rajesh Sharma</figcaption>
+                <img src="img/robosoc.png">
+                <figcaption>
+                    Dr. Rajesh Sharma<br/>
+                    <span>
+                        Faculty Cordinator
+                        <br/>
+                        Mechanical Department<br/>
+                        NIT-Hamirpur
+                    </span>
+                </figcaption>
             </figure>
-            <div class="fac-mssg">
-                <p>Robotics Society at NIT Hamirpur believes in helping and guiding students to understand and use the knowledge of robotics in shaping the future of our nation. Students are provided a platform to learn and explore the robots through various activities. We believe in learning by doing and aim at gaining the experience and exposure in the field of robotics. The society encourages students to think globally and spread their wings to take off for the new horizons in their respective domains.<br/>I personally know about the continuous efforts being put by the members and believe that their endeavours will lead our institution to incredible heights.</p>
-            </div>
+            <p class="message">
+                Robotics Society at NIT Hamirpur believes in helping and guiding students to understand and use the knowledge of robotics in shaping the future of our nation. Students are provided a platform to learn and explore the robots through various activities. We believe in learning by doing and aim at gaining the experience and exposure
+                in the field of robotics. The society encourages students to think globally and spread their wings to take off for the new horizons in their respective domains.<br/>I personally know about the continuous efforts being put by the members and believe that their endeavours will lead our institution to incredible heights.
+            </p>
         </div>
-    </article>
-
-    <article class="robocon">
-        <h3>Asia-Pacific Broadcasting Union's</h3>
-        <h2>ROBOCON</h2>
-        <p>The ABU Asia-Pacific Robot Contest (ABU Robocon) is an Asian Oceanian College robot competition, founded in 2002 by Asia-Pacific Broadcasting Union.</p>
-        <div class="rank-container">
-            <div class="rank">
-                <div>116</div>
-                <p>AIR in 2016</p>
-            </div>
-            <div class="rank">
-                <div>25</div>
-                <p>AIR in 2018</p>
-            </div>
-            <div class="rank">
-                <div>86</div>
-                <p>AIR in 2017</p>
-            </div>
+    </section>
+    <section class="robocon">
+        <div>
+            <h3 class="robo-head-caption">Asia-Pacific Broadcasting Union's</h3>
+            <h2>    
+                ROBOCON
+            </h2>
+            <hr>
         </div>
-        <div class="robo-but">
-            <a href="robocon.html"><button>Know More...</button></a>
-        </div>
-    </article>
-    
-    <article class="guide">
-        <h2>GUIDE</h2>
-        <div class="slider">
-            <div class="guide-left">
-                <h1>1</h1>
-            </div>
-            <div class="guide-arrow">
-                <img src="img/arrow-head.png" width=50px>
-            </div>
-            <div class="guide-center">
-                <h1>2</h1>
-            </div>
-            <div class="guide-arrow">
-                    <img src="img/arrow-head-right.png" width=50px>
-            </div>
-            <div class="guide-right">
-                <h1>3</h1>
-            </div>
-        </div>
-    </article>
-
-    <article class="news">
-        <div class="news-div">
-            <h2>NEWS</h2>
-            <div class="news-content news1">
-                <div>
-                    <img src="img/joseph-chan-264837-unsplash.jpg">
-                    <div class="cap">abcd</div>
+        <div class="robo-info">
+            <p class="robo-info-p">The ABU Asia-Pacific Robot Contest (ABU Robocon) is an Asian Oceanian College robot competition, founded in 2002 by Asia-Pacific Broadcasting Union. In the competition robots compete to complete a task within a set period of time. The contest aims to create friendship among young people with similar interests who will lead their countries in the 21st century, as well as help advance engineering and broadcasting technologies in the region.</p>
+            <div class="robo-achievements"> 
+                <h3>Our Previous Achievments are as follows:</h3>
+                <div class="robo-years">
+                    <h4 class="year">2018</h4>
+                    <hr class="robo-info-hr">
+                    <p><span>Venue: </span>Maharashtra institute of Technology, Pune</p>
+                    <p><span>Rank Achieved: </span>25</p>
                 </div>
-            </div>
-            <div class="news-content news2">
-                <div>        
-                    <img src="img/joseph-chan-264837-unsplash.jpg">
-                    <div class="cap">abcd</div>
+                <div class="robo-years">
+                        <h4 class="year">2017</h4>
+                        <hr class="robo-info-hr">
+                        <p><span>Venue: </span>Maharashtra institute of Technology, Pune</p>
+                        <p><span>Rank Achieved: </span>86</p>
                 </div>
-            </div>
-            <div class="news-content news3">
-                <div>        
-                    <img src="img/joseph-chan-264837-unsplash.jpg">
-                    <div class="cap">abcd</div>
+                <div class="robo-years">
+                        <h4 class="year">2016</h4>
+                        <hr class="robo-info-hr">
+                        <p><span>Venue: </span>Maharashtra institute of Technology, Pune</p>
+                        <p><span>Rank Achieved: </span>119</p>
                 </div>
-            </div>
+            </div>  
+            <div class="robo-info-button"><button>Know More</button></div>
         </div>
-    </article>
+    </section>
 
     <footer>
-        <img src="img/robosoc.png" width=150px>
-        <div>
-            <ul>
-                <a><li>Top</li></a>
-                <li>Activities</li>
-                <li>Projects</li>
-                <li>Sponsor Us</li>
-            </ul>
-            <ul>
-                <li>Blog</li>
-                <li>People</li>
-                <li>Gallery</li>
-                <a><li></li></a>
-            </ul>
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <div class="contact-form">
+                <form action="post">
+                    <input type="text" name="name" placeholder="Name">
+                    <br/>
+                    <input type="email" name="email" placeholder="Email">
+                    <br/>
+                    <input class="form-message" type="text" name="message" placeholder="Message">
+                    <input type="submit">
+                </form>
+            </div>
         </div>
+        <div class="links"></div>
     </footer>
+<script src="js/index2.js"></script>
 </body>
 </html>
