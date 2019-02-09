@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Acme');
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: 'acme', sans-serif;
+    letter-spacing: 3px;
+}
 h4.group.card-title {
     font-size: 1em;
     color: #000;
@@ -170,31 +180,34 @@ display:none;
         margin-bottom: 0;
     }
 }
-/*nav*/
- a2{
-            text-decoration: none;
-            color: white;
-        }
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
 nav{
     position: fixed;
     top: 0;
     width: 100%;
     padding: 0 5%;
     height: 75px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #3700b3;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
     border-bottom: 2px solid white;
-    color: white;
 }
 .branding{
     height: 100%;
     display: flex;
     align-items: center;
+    color: white;
 }
-.figure1{
+figure{
     margin: 0;
     padding: 0;
     height: 100%;
@@ -214,18 +227,18 @@ nav{
     align-items: center;
 }
 .brand h3{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
 }
 .brand span{
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 700;
 }
 .nav-links{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
 }
 .nav-links a{
@@ -233,29 +246,58 @@ nav{
     font-weight: normal;
     text-align: center;
 }
-/*/nav*/
-/*footer*/
-.a1{
-            text-decoration: none;
-            color: white;
-        }
-    .footer1{
-    background-color: rgb(0,0,0);
-    height: 150px;
+.ham-burg{
+    display: none;
+}
+#sec-style{
+    font-size: 6vw;
+    padding: 0;
+    margin: 0;
+}
+#sec-style2{
+font-size: 3vw;
+margin: 0;
+padding: 0;
+}
+.banner{
+    z-index: 1;
+    background-image: url("../../img/blog/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; 
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    height: 100vh;
     width: 100%;
-    padding: 0 20%;
-    color: white;
+    padding: 0 10%; 
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;  
+}
+.banner-box{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 60%;
+    height: 20vw;
     align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    border: 5px solid white;
+    font-family: 'lato', sans-serif;
 }
-.ul1{
-    list-style-type: none;
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: white ;
+    transition: width .3s;
 }
-.li1{
-    float: left;
-    margin-right: 50px;
-    margin-bottom: 25px;
+
+a:hover::after {
+    width: 100%;
+    transition: width .3s;
 }
-/*/footer*/
