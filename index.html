@@ -126,20 +126,40 @@
     </section>
 
     <footer>
-        <div class="contact-us">
-            <h3>Contact Us</h3>
-            <div class="contact-form">
-                <form action="post">
-                    <input type="text" name="name" placeholder="Name">
-                    <br/>
-                    <input type="email" name="email" placeholder="Email">
-                    <br/>
+        <h3>CONTACT US</h3>
+        <div class="contact-container">
+            <!-- 1st Contact form -->
+            <article class="contact-form">
+                <form>
+                    <input class="form-input" type="text" name="name" placeholder="Name">
+                    <div class="sub-form">
+                        <input class="sub-form-input" type="email" name="email" placeholder="Email">
+                        <input class="sub-form-input" type="text" name="Subject" placeholder="Subject">
+                    </div>
                     <input class="form-message" type="text" name="message" placeholder="Message">
-                    <input type="submit">
+                    <input class="submit" type="submit" placeholder="SUBMIT">
                 </form>
-            </div>
+            </article>
+            <!-- 2nd Contact Details -->
+            <article class="contact-info">
+                <h4>FIND US AT</h4>
+                <p>
+                    <span>NIT HAMIRPUR</span>
+                    <br>
+                    HIMACHAL PRADESH
+                    <br />
+                    177005
+                </p>
+                <h4>FOLLOW US AT</h4>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=robonith@gmail.com" class="contact-link"><i
+                        class="fab fa-google-plus-g"></i> robonith@gmail.com</a>
+                <a href="https://www.instagram.com/robosocnith" class="contact-link" target="_blank"><i
+                        class="fab fa-instagram"></i> /robosocnith</a>
+                <a href="https://www.facebook.com/robo.soc.nith" class="contact-link"><i class="fab fa-facebook-f"></i>
+                    /robo.soc.nith</a>
+                <a class="contact-link">Twitter Icon</a>
+            </article>
         </div>
-        <div class="links"></div>
     </footer>
 <script src="js/index2.js"></script>
 </body>
