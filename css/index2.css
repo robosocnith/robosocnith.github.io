@@ -27,7 +27,6 @@ h2{
     color: white;
     font-weight: normal ;
     text-transform: capitalize;
-    margin-left; 50px;
     padding: 0;
     line-height: 60px;
 }
@@ -316,7 +315,7 @@ input::placeholder {
 .submit{
     height: 50px;
     background-color: yellowgreen;
-    color: white;
+    color: black;
 }
 
 
