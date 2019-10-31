@@ -167,6 +167,13 @@
         updateMasonry(event);
     });
 
+    $(document).on('lazyload', function(event) {
+        updateMasonry(event);
+        $(window).scrollEnd(function(){
+            updateMasonry(event);
+        }, 250)
+    });
+
     $('.mbr-gallery-item').on('click', 'a', function(e) {
         e.stopPropagation();
     });
@@ -183,12 +190,22 @@
 
     function styleImg($carouselItem, wndH, wndW, windowPadding, bottomPadding){
         var $currentImg = $carouselItem.find('img');
+        if ($currentImg[0].complete && $currentImg[0].naturalWidth>50 && $currentImg[0].naturalHeight>50) {
+            setCSStoImage($currentImg,$carouselItem, wndH, wndW, windowPadding, bottomPadding)
+        } else {
+            $currentImg.one('load', function() {
+                setCSStoImage($currentImg,$carouselItem, wndH, wndW, windowPadding, bottomPadding)
+            })
+        }
+    }
 
+    function setCSStoImage(image,item, wndH, wndW, windowPadding, bottomPadding) {
         var setWidth, setTop;
-        var lbW = $currentImg[0].naturalWidth;
-        var lbH = $currentImg[0].naturalHeight;
 
-         // height change
+        var lbW = image[0].naturalWidth;
+        var lbH = image[0].naturalHeight;
+
+        // height change
         if (wndW / wndH > lbW / lbH) {
             var needH = wndH - bottomPadding * 2;
             setWidth = needH * lbW / lbH;
@@ -201,11 +218,11 @@
         // set top to vertical center
         setTop = (wndH - setWidth * lbH / lbW) / 2;
 
-        $currentImg.css({
+        image.css({
             width: parseInt(setWidth),
             height: setWidth * lbH / lbW
         });
-        $carouselItem.css('top', setTop + windowPadding);
+        item.css('top', setTop + windowPadding);
     }
 
     function timeOutCarousel($lightBox, wndW, wndH, windowPadding, bottomPadding, flagResize){
