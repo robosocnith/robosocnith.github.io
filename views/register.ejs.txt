@@ -1,0 +1,11 @@
+<html>
+<body>
+<h1>ok</h1>
+<form action='/register' method='POST'>
+<input name=name>
+<input name=email>
+<input name=username>
+<input name=password>
+<input type=submit>
+</form>
+</body>

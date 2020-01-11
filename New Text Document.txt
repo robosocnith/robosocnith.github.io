@@ -1,0 +1,14 @@
+var bodyParser=require('body-parser'),
+express=require('express')
+passport=require('passport'),
+mongoose=require('mongoose'),
+app=express();
+
+
+app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ limit: "50mb", extended: true, parameterLimit: 50000 }));
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());

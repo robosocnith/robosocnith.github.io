@@ -1,0 +1,14 @@
+<html>
+<body>
+<h1>hiii<%=req.user.name%></h1>
+<h2><%=req.user.email%>
+<h3>your username is<%=req.user.username%>
+<a href='/makeblog'>make a blog</a>
+
+<form action='/announcement' method='POST'>
+<input name=heading>
+<input name=email>
+<input name=password>
+<input type=submit>
+</form>
+</body>
