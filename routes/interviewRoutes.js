@@ -1,5 +1,5 @@
 var bodyParser=require('body-parser'),
-express=require('express')
+express=require('express'),
 passport=require('passport'),
 LocalStrategy=require('passport-local'),
 nodemailer=require('nodemailer'),
@@ -34,9 +34,9 @@ router.get('/viewInterviewee',function(req,res){
 });
 
 
-router.get('/confirm',isFourth,function(req,res){
+/*router.get('/confirm',isFourth,function(req,res){
 	Interviewee.find({"status":"selected"},function(err,selected){
 		res.render('confirmInterviewees',{selected});
 	});
-});
+});*/
 module.exports=router;

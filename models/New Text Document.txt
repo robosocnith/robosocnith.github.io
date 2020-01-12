@@ -1,1 +1,0 @@
-var passprtLocalMongoose=require('passport-local-mongoose');
