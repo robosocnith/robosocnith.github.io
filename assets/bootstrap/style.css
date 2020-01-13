@@ -1,0 +1,92 @@
+h1.b{
+    margin-top:30px;
+    color:white;
+    font-size:100px;
+    font-family: "Times New Roman", Times, serif;
+    opacity:0.75;
+}
+section.sp {
+    color:black;
+    font-size:small;
+    background: rgb(197, 197, 197);
+    border:chocolate;
+    border-spacing: 500px;
+    height:1330px;
+}
+h1.c{
+    color:black;
+    margin-left: 80px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: left;
+}
+h1.f{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+    text-align: center;
+}
+div.no{
+    text-align: center;
+    color:black;
+}
+div.f{
+    
+    text-align: center;
+    color:black;
+}
+nav.tax{
+    font-size:large;
+    text-align: center;
+    color:black
+}
+nav.ted{
+    font-size:medium;
+
+}
+button{
+    border-radius: 8px;
+    background: black;
+    color: white;
+    height:35px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 230px;
+    font-size:small;
+}
+div.why{
+    display:flex;
+    padding: 2%;
+}
+div.g{
+  width: 40%;
+  margin-left:50px;
+    flex=1;
+}
+h5.pla{
+  margin-left: 100px;
+color:rgba(15, 115, 115, 0.802);
+}
+h5.dia{
+  margin-left: 100px;
+color:rgba(15, 57, 115, 0.802);
+}
+h5.gold{
+  margin-left: 100px;
+color:rgb(191, 163, 3);
+}
+h5.silver{
+    color:black;
+    margin-left: 100px;
+}
+h3{
+  margin-left: 110px;
+    color:rgb(184, 120, 2);
+}
+h1.jn{
+    text-align: center;
+}
+li{
+    margin-left: 110px;
+}
+nav.scl{
+    margin-left: 105px;
+    margin-right:105px;
+}

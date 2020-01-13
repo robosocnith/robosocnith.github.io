@@ -1,0 +1,135 @@
+
+     
+      /*Typography*/
+    html {font: 16px 'Open Sans Condensed', 'Roboto Condensed', Verdana, sans-serif;}
+    h1 {font-size: 2.25em;}
+    h2 {font-size: 2em;}
+    h3 {font-size: 1.75em;}
+    h4 {font-size: 1.5em;}
+    p {font-size: 1.25em;}
+    /*Layout*/
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+   body {color: #333;}
+    *,
+    *:before,
+    *:after {box-sizing: border-box;}
+    .line {
+      float: left;
+      width: 100%;
+      border-top: .25em solid  ;
+    }
+    .wrapper {
+      margin: auto;
+      width: 60em;
+    }
+    header,
+    nav,
+    section,
+    footer {
+      float: left;
+      width: 100%;
+    }
+   
+    .button {
+        display: block;
+        padding: .75em 1.25em;
+        font-size: 1em;
+        font-weight: bold;
+        text-transform: uppercase;
+        
+        color: #fff;
+        border: 0;
+        cursor: pointer;
+      }
+  
+ /*Sections*/
+ section {margin: 1em 0;}
+ section h1 {text-transform: uppercase;}
+ 
+ /*Intro*/
+ .sec-intro {position: relative;}
+ .sec-intro img {
+   width: 100%;
+ }
+ .sec-intro h1 {
+   position: absolute;
+   bottom: .5em;
+   left: .5em;
+   padding: .5em;
+   background: rgba(0,0,0,.5);
+   color: #fff;
+ }
+ /*Boxes*/
+ .box {
+   float: left;
+   padding: 1.5em 1em;
+   width: 25%;
+   height: 400px;
+   border-top: .1em solid $lightblack;
+   border-bottom: .1em solid $lightblack;
+   border-left: .1em solid $lightblack;
+  
+ }
+ .box:last-child {border-right: .1em solid $lightblack;}
+ .box h1 {text-align: center;}
+ .box p {
+   margin-top: 4em;
+   height: 6em;
+   text-align: justify;
+ }
+ .box .button {
+   margin: 4em auto;
+ }
+   
+  
+    /*Events*/
+    .sec-events > h1 {margin-top: 1em;}
+    .sec-events article {
+      float: left;
+      padding: 0 .25em;
+      width: 25%;
+      text-align: justify;
+    }
+    .sec-events article h1,
+    .sec-events article p {
+      display: block;
+      margin: .5em 0;
+      padding: .25em 1em;
+      font-size: 110%;
+    }
+    .sec-events article a {float: right;padding-right: 1em;}
+    .sec-events article h1 {font-weight: bold;text-align: center;}
+    /*Projects*/
+    .sec-projects {width: 60%;}
+    .sec-projects > h1 {
+      margin-top: 1em;
+      text-align: center;
+    }
+    .sec-projects article {
+      padding: .5em 0;
+      width: 100%;
+    }
+    .sec-projects article h1,
+    .sec-projects article p {font-size: 110%;}
+    .sec-projects article h1 {font-weight: bold;}
+    .sec-projects article p {
+      margin: .5em .5em .5em 0;
+      text-align: justify;
+    }
+    .sec-projects p a {float: right;}
+    .sec-projects button {
+      position: relative;
+      left: 80%;
+    }
+      
+    section.root {width: 40%;
+   
+  align-self: left;}
+    
+    
+  
+    
