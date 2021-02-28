@@ -794,6 +794,11 @@ About and Diversity
 .big-feature .left-text .quote{
   text-align: center;
 }
+@media (max-width: 991px){
+  .big-feature p, .big-feature h2{
+    text-align: center;
+  }
+}
 
 
 
