@@ -1,0 +1,115 @@
+ :root {
+    --primary-color:        #057a8d;
+    --secondary-color:      #f1c111;
+    --white-color:          #ffffff;
+    --dark-color:           #171819;
+    --project-bg:           #f0f8ff;
+    --menu-bg:              #0c8195;
+
+    --title-color:          #15141a;
+    --gray-color:           #909090;
+    --link-color:           #404040;
+    --p-color:              #666262;
+
+    --base-font-family:     'Plain-Light', sans-serif;
+    --title-font-family:    'Plain-Regular', sans-serif;
+    --font-bold-family:     'Plain-Bold', sans-serif;
+    --font-weight-bold:     bold;
+
+    --h1-font-size:         42px;
+    --h2-font-size:         32px;
+    --h3-font-size:         24px;
+    --p-font-size:          18px;
+    --base-font-size:       16px;
+    --menu-font-size:       14px;
+
+    --border-radius-large:  100px;
+    --border-radius-small:  5px;
+  }
+
+  body {
+    background: var(--white-color);
+    font-family: var(--base-font-family);
+  }
+
+
+  /*---------------------------------------
+     TYPOGRAPHY              
+  -----------------------------------------*/
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family: var(--title-font-family);
+    line-height: inherit;
+  }
+
+  h1 {
+    color: var(--title-color);
+    font-size: var(--h1-font-size);
+  }
+
+  h2 {
+    font-size: var(--h2-font-size);
+    font-weight: 100;
+  }
+
+  h3 {
+    font-size: var(--h3-font-size);
+    font-weight: 100;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    color: var(--gray-color);
+    font-family: var(--base-font-family);
+    font-size: var(--p-font-size);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: var(--p-color);
+    font-size: var(--p-font-size);
+    line-height: 1.5em;
+  }
+
+  b, 
+  strong {
+    letter-spacing: 0;
+    color: var(--secondary-color);
+  }
+
+  /*---------------------------------------
+     GENERAL               
+  -----------------------------------------*/
+
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  *::before,
+  *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  a {
+    color: var(--link-color);
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+  a:hover, 
+  a:active, 
+  a:focus {
+    color: var(--secondary-color);
+    outline: none;
+    text-decoration: none;
+  }
+
+  ::selection {
+    background: var(--secondary-color);
+    color: var(--white-color);
+  }
