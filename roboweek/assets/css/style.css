@@ -881,6 +881,7 @@ FAQs
 .accordion h5{
   font-size: 16px;
   letter-spacing: 1.5px;
+  padding-right: 25px;
 }
 .plus-icon{
   position: absolute;
