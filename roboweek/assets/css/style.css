@@ -270,6 +270,7 @@ font-family: 'Times New Roman', Times, serif;
 }
 
 a.main-button-slider {
+  font-weight: bold;
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
