@@ -1051,6 +1051,9 @@ Sponsers
   padding: 160px 0px;
   text-align: center;
 }
+.sp-category{
+  margin: auto;
+}
 .center-heading hr{
   width: 250px;
 }
