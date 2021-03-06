@@ -1006,6 +1006,9 @@ Cards
 .treasure-hunt{
   background: url('../images/treasure.jpg') no-repeat center bottom;
 }
+.teck-talk{
+  background: url('../images/teck-talk.jpg') no-repeat center bottom;
+}
 .card h2 {
   color: #8261ee;
   font-family: 'Raleway', sans-serif;
