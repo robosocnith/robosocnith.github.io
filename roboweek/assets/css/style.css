@@ -24,7 +24,9 @@ ul, li {
   margin: 0;
   list-style: none;
 }
-
+.tag-line{
+  text-transform: uppercase;
+}
 header, nav, section, article, aside, footer, hgroup {
   display: block;
 }
@@ -32,7 +34,21 @@ header, nav, section, article, aside, footer, hgroup {
 * {
   box-sizing: border-box;
 }
-
+#drop-li{
+  padding-right: 0px;
+}
+#nav-drop{
+  cursor: pointer;
+}
+#drop-menu{
+  background: white;
+  margin-left: -15px;
+  padding: 5px 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 0.5s ease-in;
+  overflow: hidden;
+}
 html, body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -431,6 +447,23 @@ header
 }
 
 .header-area .main-nav .nav li a:hover {
+  color: #ff589e;
+}
+.header-area .main-nav .nav li p {
+  display: block;
+  font-weight: 500;
+  font-size: 13px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  height: 40px;
+  line-height: 40px;
+  border: transparent;
+  letter-spacing: 1px;
+}
+
+.header-area .main-nav .nav li p:hover {
   color: #ff589e;
 }
 
@@ -949,7 +982,7 @@ Cards
   transition: .3s cubic-bezier(.3, 0, 0, 1.3) 
 }
 .card {
-  height: 320px;
+  height: 375px;
   width: 300px;
   margin: auto;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
@@ -961,12 +994,12 @@ Cards
   left: 0;
 }
 .card:hover {
-  height: 430px; /* 490px button */
+  height: 540px;
   width: 300px;
 }
 .card:hover .cta-container {
   display: inline;
-  margin-top: 420px;
+  margin-top: 480px;
 }
 .card:hover .card_circle {
   background-size: cover;
@@ -991,23 +1024,14 @@ Cards
   position: absolute;
   width: 450px;
 }
-.workshops{
-  background: url('../images/ml.JPG') no-repeat center bottom;
+.fun-1{
+  background: url('../images/competitions/article.png') no-repeat center bottom;
 }
-.competitions{
-  background: url('../images/competition-2.jpg') no-repeat center bottom;
+.fun-2{
+  background: url('../images/competitions/for\ memers.jpg') no-repeat center bottom;
 }
-.fun-events{
-  background: url('../images/fun.jpg') no-repeat center bottom;
-}
-.coding-manias{
-  background: url('https://cdn.pixabay.com/photo/2017/03/23/09/34/artificial-intelligence-2167835__340.jpg') no-repeat center bottom;
-}
-.treasure-hunt{
-  background: url('../images/treasure.jpg') no-repeat center bottom;
-}
-.teck-talk{
-  background: url('../images/teck-talk.jpg') no-repeat center bottom;
+.fun-3{
+  background: url('../images/competitions/treasure-hunt.png') no-repeat center bottom;
 }
 .card h2 {
   color: #8261ee;
@@ -1034,7 +1058,10 @@ Cards
   margin-top: 320px; 
   position: absolute;
   text-align: center;
-  width: 100%;
+  width: 50%;
+}
+.cta-container a{
+  border-radius: 16px;
 }
 .cta {
   -moz-border-radius: 2px;
@@ -1049,16 +1076,19 @@ Cards
   color: #8261ee;
   display: inline-block;
   font-family: 'Raleway', sans-serif;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 400;
   height: 36px;
   letter-spacing: 0.5px;
   line-height: 36px;
   margin-bottom: 15px;
-  padding: 0 2rem;
+  padding: 0 5px;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.2s ease-out;
+}
+.cta-btn-2{
+  margin-left: 50%;
 }
 .cta:hover {
   background-color: #8261ee;
@@ -1066,6 +1096,304 @@ Cards
   color: #fff;
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.w-cards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.w-cards-div{
+  height: 440px;
+  width: 300px;
+  background-color: #f2f2fe;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  border-radius: 16px;
+  transition: 0.7s;
+}
+.w-cards-div:hover{
+  box-shadow:0px 0px 10px 2px rgba(0,0,0,.5);
+}
+.w-image{
+  width: 100%;
+  height: 180px;
+  transition:.2s ease-in-out;
+  border-radius: 16px 16px 0 0;
+}
+.prize{
+  font-weight: bold;
+}
+.prize-adder{
+  color: #a759d1;
+}
+.w-img-1{
+  background: url('../images/competitions/coding\ mania.png') no-repeat center bottom;
+}
+.w-img-2{
+  background: url('../images/competitions/Turtle-regatta\ \(1\).jpg') no-repeat center bottom;
+}
+.w-img-3{
+  background: url('../images/competitions/traceit.jpeg') no-repeat center bottom;
+}
+.w-img-4{
+  background: url('../images/competitions/design\ war.jpeg') no-repeat center bottom;
+}
+.w-img-5{
+  background: url('../images/competitions/processingC.png') no-repeat center bottom;
+}
+.w-img-6{
+  background: url('../images/competitions/hack\ cv.png') no-repeat center bottom;
+}
+.w-img-7{
+  background: url('../images/competitions/quizzeria.png') no-repeat center bottom;
+}
+.w-cards-div:hover .w-image{
+  filter:brightness(1);
+}
+.w-content{
+  height: 260px;
+  padding: 15px;
+  position: relative;
+}
+.w-content hr, .w-content .row{
+ position: absolute;
+}
+.w-content .row{
+  width: 100%;
+  bottom: 20px;
+}
+.w-content hr{
+  width: 90%;
+  bottom: 45px;
+}
+.w-tag{
+  background-color: #ff589e;
+  color: white;
+  padding: 2px 6px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border-radius: 20px;
+}
+.w-heading{
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 10px 0px;
+}
+.w-content p{
+  font-size: 14px;
+}
+
+.c-cards-block{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hexagon{
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 50px 20px 70px;
+}
+.hexagon::before{
+  content: '';
+  position: absolute;
+  bottom: -70px;
+  width: 100%;
+  height: 60px;
+  background: radial-gradient(rgba(0,0,0,0.15), transparent, transparent);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.hexagon:hover::before{
+  opacity: 0.8;
+  transform: scale(0.8);
+}
+.shape{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  transition: 0.5s;
+}
+.hexagon:hover .shape{
+  transform: translateY(-30px);
+}
+.hexagon h2{
+  font-weight: bold;
+}
+.shape img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.c-cards-content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(45deg, #ff589e, rgba(203, 97, 238, 0.5));
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+.c-cards-content p{
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+.hexagon:hover .c-cards-content{
+  opacity: 1;
+}
+.c-cards-btn{
+  color: white;
+  font-size: 16px;
+  border: 2px solid white;
+  border-radius: 16px;
+  padding: 2px 30px;
+  margin-top: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.c-cards-btn:hover{
+  background: white;
+  color: #8261ee;
+}
+.w-cards-btn{
+  font-size: 14px;
+  border-radius: 16px;
+  border: 2px groove #8261ee;
+  color: #8261ee;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.5s;
+}
+.w-cards-btn:hover{
+  background:  #8261ee;
+  color: white;
+}
+.t-panel{
+  margin: 0% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.t-card-div{
+  min-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.t-card{
+  width: 300px;
+  height: 400px;
+  position: relative;
+  background: rgb(255, 207, 207);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+  transition: 1s;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 0 16px 16px 0;
+}
+.t-details{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 1s;
+  margin-top: -400px;
+}
+.t-content h2{
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.t-content p{
+  font-size: 16px;
+}
+.t-btn{
+  width: 50%;
+  float: left;
+  text-align: center;
+  margin-top: 20px;
+}
+.t-btn span{
+  border: 2px solid #8261ee;
+  color: #3c00ff;
+  padding: 2px 18px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.5s;
+  border-radius: 16px;
+}
+.t-btn span:hover{
+  color: white;
+  background: #8261ee;
+}
+.t-imgBox{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transition: 1s;
+}
+.t-imgBox img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-style: preserve-3d;
+  transition-delay: 0.3s;
+  border-radius: 0 16px 16px 0;
+}
+@media only screen and (max-width: 650px) {
+  .t-card:hover .t-imgBox{
+    z-index: -1;
+    opacity: 0;
+  }
+  .t-card, .t-imgBox img{
+    border-radius: 16px;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .t-card:hover .t-imgBox{
+    transform: rotateY(-180deg);
+  }
+  .t-card:hover .t-imgBox img{
+    transform: scaleX(-1);
+    border-radius: 16px 0 0 16px;
+  }
+  .t-card:hover{
+    transform: translateX(50%);
+  }
 }
 /* 
 ---------------------------------------------

@@ -25,6 +25,26 @@
 			document.querySelector("nav").classList.remove("nav-padding");
 		}
 	}
+	//Navbar
+	var drop=document.querySelector("#nav-drop");
+	var menu=document.querySelector("#drop-menu");
+	menu.style.maxHeight="0px";
+	drop.addEventListener("click", function(){
+		if(menu.style.maxHeight != "0px"){
+			menu.style.maxHeight = "0px";
+			this.innerHTML="Features <i class='fas fa-angle-down'></i>";
+		}
+		else{
+			menu.style.maxHeight = menu.scrollHeight + "px";
+			this.innerHTML="Features <i class='fas fa-angle-up'></i>";
+		}
+	})
+	for(var i=0;i<4;i++){
+		menu.children[i].addEventListener("click", function(){
+			menu.style.maxHeight = "0px";
+			drop.innerHTML="Features <i class='fas fa-angle-down'></i>"
+		})
+	}
 
 	//FAQs
 	for(var i=0;i<document.querySelectorAll(".panel").length;i++){
@@ -141,6 +161,9 @@
 	    $('.nav a').each(function () {
 	        var currLink = $(this);
 	        var refElement = $(currLink.attr("href"));
+			if(refElement.position() == "undefined"){
+				console.log("bgujh");
+			}
 	        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
 	            $('.nav ul li a').removeClass("active");
 	            currLink.addClass("active");
