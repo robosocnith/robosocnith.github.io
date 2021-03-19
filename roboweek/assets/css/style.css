@@ -1211,6 +1211,7 @@ Cards
 .hexagon:hover::before{
   opacity: 0.8;
   transform: scale(0.8);
+
 }
 .shape{
   position: absolute;
@@ -1243,6 +1244,7 @@ Cards
   width: 100%;
   height: 100%;
   display: flex;
+  font-size: 11px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1256,7 +1258,7 @@ Cards
 .c-cards-content p{
   color: white;
   text-align: center;
-  font-size: 14px;
+  font-size: 11px;
 }
 .hexagon:hover .c-cards-content{
   opacity: 1;
