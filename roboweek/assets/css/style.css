@@ -972,7 +972,7 @@ Cards
   width: 300px;
   height: 450px;
   margin: auto;
-  margin-bottom: -20px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1496,9 +1496,9 @@ Prizes Cards
 .card__cover {
   position: relative;
   background-size: cover;
-  height: 8rem;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  height: 5rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
@@ -1513,10 +1513,9 @@ Prizes Cards
   width: 75%;
 }
 .card__heading-span {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
-  padding: 1rem 1.5rem;
   color: #fff;
 }
 .card__details {
@@ -1528,52 +1527,13 @@ Prizes Cards
   margin: 0 auto;
 }
 .card__details ul li {
-  font-size: 11.4px;
+  font-size: 11.6px;
   padding: 2px;
 }
 .card__details ul li:not(:last-child) {
   border-bottom: 1px solid #eee;
 }
-@media only screen and (max-width: 37.5em), only screen and (hover: none) {
-   .card2 {
-    height: auto;
-    border-radius: 3px;
-    background-color: #fff;
-    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
- }
-  .card__side {
-    height: auto;
-    position: relative;
-    box-shadow: none;
- }
-  .card__side--front {
-    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
- }
-  .card__side--back {
-    transform: rotateY(0);
- }
-   .card2:hover .card__side--front {
-    transform: rotateY(0);
- }
-  .card__details {
-    padding: 3rem 2rem;
- }
-  .card__theme {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: translate(0);
-    width: 100%;
-    padding: 5rem 4rem 1.5rem 4rem;
-    text-align: right;
- }
-  .card__theme-box {
-    margin-bottom: 1.5rem;
- }
-  .card__title {
-    font-size: 4rem;
- }
-}
+
 
 
 /* 
@@ -1744,7 +1704,7 @@ Timeline
   margin: 20px 0;
   border-radius: 6px;
   align-self: center;
-  width: 50vw;
+  width: 70vw;
 }
 .timeline__event:nth-child(2n + 1) {
   flex-direction: row-reverse;
