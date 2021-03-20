@@ -1997,7 +1997,7 @@ Timeline
   margin: 0 0 15px;
   transition: all 0.3s ease 0s;
 }
-.counter:hover .counter-icon{ transform: rotateY(360deg); }
+.counter:hover .counter-icon{ transform: rotateY(180deg); }
 .counter .counter-value{
   color: #555;
   font-size: 30px;
