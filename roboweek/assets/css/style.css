@@ -1459,6 +1459,15 @@ Prizes Cards
 .prize-card-8{
   background-image: url(../images/prizes/8.png);
 }
+.prize-card-9{
+  background-image: url(../images/prizes/9.png);
+}
+.prize-card-10{
+  background-image: url(../images/prizes/10.png);
+}
+.prize-card-11{
+  background-image: url(../images/prizes/11.png);
+}
 .card__side--back {
   background-color: #fff;
   transform: rotateY(180deg);
@@ -1529,7 +1538,7 @@ Prizes Cards
   margin: 0 auto;
 }
 .card__details ul li {
-  font-size: 11.6px;
+  font-size: 11.45px;
   padding: 2px;
 }
 .card__details ul li:not(:last-child) {
