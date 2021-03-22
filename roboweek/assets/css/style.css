@@ -14,6 +14,9 @@ figure, header, nav, section, article, aside, footer, figcaption {
   border: 0;
   outline: 0;
 }
+.grey{
+  color: rgb(157, 157, 157);
+}
 
 nav{
   z-index: 1000;
